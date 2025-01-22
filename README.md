@@ -8,11 +8,8 @@ This project implements an image classification pipeline using TensorFlow and Ke
 ## Usage
 1. Ensure the dataset is organized into the required directory structure.
 2. Replace `<path_to_your_dataset_directory>` in the script with the actual dataset path.
-3. Replace `<path_to_your_test_directory>` in the script with the actual test directory path.
-4. Locate the output CSV file to your desired path (`<path_to_your_output_directory>` + `/predictions.csv`).
-5. Run the script to train the model and generate predictions.
-
-
+3. Locate the output CSV file to your desired path (`<path_to_your_output_directory>` + `/predictions.csv`).
+4. Run the script to train the model and generate predictions.
 ---
 
 ## Implementation Details
