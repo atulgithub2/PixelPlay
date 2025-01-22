@@ -95,13 +95,13 @@ plt.title('Loss')
 animal_names=['antelope', 'bat', 'beaver', 'blue+whale', 'bobcat', 'buffalo', 'chihuahua', 'cow', 'dalmatian', 'deer', 'dolphin', 'elephant', 'german+shepherd', 'giant+panda', 'giraffe', 'grizzly+bear', 'hamster', 'hippopotamus', 'humpback+whale', 'killer+whale', 'leopard', 'lion', 'mole', 'mouse', 'otter', 'ox', 'persian+cat', 'pig', 'polar+bear', 'raccoon', 'rat', 'seal', 'siamese+cat', 'skunk', 'spider+monkey', 'tiger', 'walrus', 'weasel', 'wolf', 'zebra']
 
 # Directory for test images
-tests = '<path_to_your_test_directory>'
+test_ds = base_dir+'test/'
 test_predictions = []
 
 # Make predictions on test images
-for image in os.listdir(tests):
+for image in os.listdir(test_ds):
     temp = image # Store image name
-    image = tests+image # Full path to individual images
+    image = test_ds+image # Full path to individual images
 
     # Load and preprocess the image
     image = tf.keras.utils.load_img(image,target_size=(img_size,img_size))
